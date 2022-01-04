@@ -1,0 +1,629 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+	background-color: black;
+
+}
+header{
+    background-image: url(../image/navforphone.jpg);
+    height: 90px;
+    background-color: blue;
+	border: 1px rgb(0, 0, 0) solid;
+	position: relative;
+}
+.content{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	background-image: url(../image/backforphone.jpg);
+	overflow-x: hidden;
+	position: relative;
+	margin-top: 5px;
+}
+.content1{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 500px;
+	background-image: url(../image/backforphone.jpg);
+	overflow-x: hidden;
+	position: relative;
+	margin-top: 5px;
+}
+.bio-content{
+	margin-top: 10px;
+	display: flex;
+	position: relative;
+	flex-direction: column;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	top: 10px;
+}
+
+/* navigation */
+
+nav{
+	position: relative;
+	height: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.navdiv{
+	display: inline-flex;
+	align-self: center;
+	position: relative;
+}
+
+.nbox{
+	text-decoration: none;
+	list-style: none;
+	color: white;
+	text-align: center;
+	font-size: 14px;
+	font-family: Agency FB;
+	font-weight: bolder;
+	
+}
+.obox{
+	width: 50px;
+	padding: 5px;
+	margin: 0 3px;
+	background-color: gray;
+	border-style: double;
+	border-color: white;
+	list-style: none;
+	text-align:  center;
+	border-radius: 90px;
+
+}
+
+.obox:hover {
+	background-color: rgb(0, 51, 128);
+	transition: .5s;
+	transform: scale(1.05);
+}
+.active{
+	background-color: rgb(0, 51, 128);
+}
+
+/* For the index */
+.definition{
+   		background-color: rgb(32, 32, 32) ;
+		font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+		font-size: 8px;
+		color: white;
+		width: 250px;
+		height: 200px;
+		transition:1s;
+		cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+		align-self: center;
+		position: relative;
+		flex-direction: column;
+	}
+
+.definition:hover{
+		transform: scale(1.03);
+		background-color: white;
+	}
+
+    .overlay
+	{
+		padding: 30px;
+		font-family: century gothic;
+		position: absolute;
+		opacity: 0;
+		overflow-y: none;
+		font-weight: normal;
+	}
+.hi{
+	font-size: 12px;
+}
+.name{
+	font-weight: bolder;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	font-size: 15px;
+	color: darkorange;
+}
+
+.text{ 
+		color:black;
+		font-family: century gothic;
+		position: center;
+		font-size: 12px;
+		text-align: justify;
+		padding: 15px;
+	}
+
+.definition:hover .overlay{
+		height:100%;
+		width: 100%;
+		opacity: 1;
+	}
+.definition:hover .name{
+		height:100%;
+		width: 100%;
+		opacity: 0;
+	}
+
+
+.click
+	{
+		border-style: double;
+		border-color: white;
+		padding-left: 20px;
+		padding-right: 20px;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		position:relative;
+		transform: perspective(1.3px);
+		transition: 1s;
+		background-color: rgb(6, 95, 136);
+		border-radius: 90px;
+		top: 5px;
+	}
+
+.click a
+	{
+		text-decoration:none;
+		font-weight: bold;
+		cursor: pointer;
+		font-family: century gothic;
+		color: white;
+		font-size: 9px;
+	}
+.click:hover
+	{
+		background-color: black;
+		transition: 1s;
+	}	
+
+.here:hover
+	{
+		transform: scale(1.02);
+		transition: .9s;
+	}
+
+/* para sa pictures tuyok2 sa home */
+	.turn
+	{
+		color: white;
+		width: 100px;
+		height: 100px;
+		position: relative;
+		transition:1s;
+		cursor: pointer;
+		transform: perspective(600px) rotateY(0deg);
+		border-style: solid;
+		border-color: white;
+		border: 2px 2px 2px 2px white;
+		overflow: hidden;
+		top: -20px;
+	}
+
+.middle:hover
+	{
+		transform: scale(1);
+	}
+
+.front
+	{
+		position: absolute;
+		opacity: 0;
+		overflow-y: none;
+		transform: rotate(180deg);
+	}
+.turn:hover .front
+	{
+		height:100%;
+		width: 100%;
+		opacity: 1;
+		top:0;
+		left: 0;
+		transition: .5s;
+		transform:  rotate(0deg);
+	}
+.middle:hover .middle
+	{
+		height:100%;
+		width: 100%;
+		opacity: 1;
+		top:0;
+		left: 0;
+		transition: .5s;
+		transform: rotate(180deg);
+	}
+.turnimg{
+	width: 100px;
+	height: 100px;
+}
+ 
+/* biodata ni kato naa sa home */
+	.biodata
+	{
+		opacity: .8;
+		position: relative;
+		height: 315px;
+		width:250px;
+		overflow-y: none;
+		background-color: white;
+		color:black;
+		padding: 5px;
+		font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+		font-size: 12px;
+		font-weight: bold;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		border-radius: 10px;
+		margin-right: 10px;
+		top: -15px;
+		
+	}
+
+.per
+	{
+		font-size: 14px;
+		font-weight: bold;
+		position: relative;
+		font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	}
+
+.broad
+	{
+		font-weight: bolder;
+		opacity: 1;
+		font-size: 12px;
+	}
+/* para sa biography */
+.info
+	{
+		opacity: .8;
+		border-style: solid;
+		border: 2px 2px 2px 2px white;
+		position: relative;
+		height: 500px;
+		width:270px;
+		background-color: black;
+		color:white;
+		padding: 10px;
+		font-family: century gothic;
+		font-size: 11px;
+		text-align: justify;
+		margin-bottom: 20px;
+	}
+
+.overview
+	{
+		border-style: solid;
+		border: 2px 2px 2px 2px black;
+		position: relative;
+		height: 25px;
+		width:80px;
+		overflow-x: none;
+		background-color:teal;
+		padding: 2px;
+		color: black;
+		text-align: center;
+		font-family: Agency Fb;
+		font-size: 15px;
+		font-weight: bold;
+		padding-top: 5px;
+		left: 95px;
+		opacity: 1;
+		border-radius: 10px;
+
+	}	
+
+/* para sa resume tab */
+.resume{
+	width: 270px;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+/* para sa gallery */
+.gallery-img{
+	width: 65px;
+	height: 70px;
+	border-radius: 5px;
+	margin: 3px;
+}
+.gallery{
+	margin-top: 10px;
+	margin-bottom: 20px;
+	padding: 20px;
+	background-color: black;
+	color: white;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	font-size: 13px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+/* para sa contact */
+.box-contact{
+	width: 270px;
+	background-color: rgb(1, 148, 153);
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	height: 400px;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+.profile{
+	width: 100px;
+	height: 100px;
+	border: 3px white;
+	border-style: solid;
+	border-radius: 90px;
+}
+.codey{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+.name{
+	font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	font-size: 16px;
+	color: white;
+}
+.codename{
+	font-family:monospace;
+	font-size: 11px;
+	color: white;
+	position: relative;
+	top: -15px;
+}
+.contact-img{
+	height: 20px;
+}
+.tab-pics{
+	display: flex;
+	justify-content: center;
+	background-color: lawngreen;
+}
+.table-contact tr td{
+	align-items: initial;
+	font-size: 9px;
+	color: white;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	border: 1px white;
+	border-style: solid;
+	padding: 5px;
+}
+
+/* For Responsive	 */
+@media only screen and (min-width: 768px){
+		.definition{
+			width: 500px;
+			height: 350px;
+			font-size: 15px;
+		}
+		.hi{
+			font-size: 30px;
+		}
+		.name{
+			font-size: 35px;
+		}
+		.overlay{
+			padding: 50px;
+		}
+		.text{
+			font-size: 20px;
+			padding: 40px;
+		}
+		header{
+			height: 200px;
+			background-image: url(../image/navfortab.jpg);
+		}
+		.content{
+			background-image: url(../image/backfortab.jpg);
+			top: 20px;
+		}
+		.bio-content{
+			flex-direction: row-reverse;
+		}
+		.click{
+			padding-left: 70px;
+			padding-right: 70px;
+			padding-top: 20px;
+			padding-bottom: 20px;
+
+		}
+		.click a{
+			font-size: 20px;
+		}
+		/* 
+		para sa home */
+		.nav{
+			height: 120px;
+			top: 10px;
+		}
+		.navdiv{
+			top: 10px;
+		}
+		.nbox{
+			font-size: 25px;
+		}
+		.obox{
+			width: 100px;
+			padding: 5px;
+			margin: 0 10px;
+		}
+		.turn{
+			width: 250px;
+			height: 250px;
+		}
+		.turnimg{
+			width: 250px;
+			height: 250px;
+		}
+		.biodata
+		{
+
+			height: 450px;
+			width:400px;
+			font-size: 20px;
+			padding: 20px;
+		}
+	.broad{
+		font-size: 20px;
+	}
+	.per{
+		font-size: 30px;
+	}
+
+	.info{
+		height: 650px;
+		width:700px;
+		font-size: 20px;
+
+	}
+	.overview{
+		height: 50px;
+		width:120px;
+		font-size: 30px;
+		left: 280px;
+
+	}
+
+.resume{
+	width:500px;
+	margin-top: 30px;
+	margin-bottom: 50px;
+}
+
+.gallery-img{
+	width: 110px;
+	height: 120px;
+	margin: 10px;
+}
+.gallery{
+	padding: 50px;
+	font-size: 20px;
+}
+
+/* para sa contact */
+.box-contact{
+	width: 500px;
+	height: 600px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+.profile{
+	width: 150px;
+	height: 150px;
+	border: 3px white;
+	border-radius: 90px;
+}
+.name{
+	font-size: 28px;
+}
+.codename{
+	font-size: 18px;
+}
+.contact-img{
+	height: 35px;
+}
+.table-contact tr td{
+
+	font-size: 18px;
+	color: white;
+	padding: 10px;
+}
+}
+		
+
+
+
+
+	
+
+	@media only screen and (min-width: 1000px){
+		.definition{
+			width: 700px;
+			height: 500px;
+			font-size: 20px;
+			
+		}
+		.overlay{
+			padding: 70px;
+		}
+		.text{
+			font-size: 30px;
+			padding: 40px;
+		}
+		.hi{
+			font-size: 35px;
+		}
+		.content{
+			top: 30px;
+			background-image: url(../image/bodybackground.jpg);
+		}
+		.content1{
+			height: 700px;
+		}
+		.click{
+			padding-left: 100px;
+			padding-right: 100px;
+			padding-top: 30px;
+			padding-bottom: 30px;
+		}
+		.click a{
+			font-size: 25px;
+		}
+		.info{
+			height: 500px;
+			width:950px;
+			font-size: 20px;
+		}
+		.overview{
+			height: 50px;
+			width:120px;
+			font-size: 30px;
+			left: 400px;
+		}
+		.nav{
+			height: 200px;
+		}
+		.navdiv{
+			top: 20px;
+		}
+		.turn{
+			width: 350px;
+			height: 350px;
+		}
+		.turnimg{
+			width: 350px;
+			height: 350px;
+		}
+		.biodata
+		{
+			width:450px;
+		}
+		.gallery-img{
+			width: 150px;
+			height: 170px;
+			margin: 15px;
+		}
+		.gallery{
+			padding: 70px;
+			font-size: 30px;
+		}
+	}
